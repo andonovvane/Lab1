@@ -1,0 +1,36 @@
+mkdir Lab1
+cd Lab1
+git init
+echo > l1.txt
+type: l1.txt enter.... save
+git add --all
+git commit -m "Initial commit"
+type: l1.txt enter ... save
+git add l1.txt
+git commit -m "modify l1.txt"
+git remote add origin URL
+git push -u origin master
+type: l1.txt enter ... save
+git checkout -Lab1
+git branch logging
+git checkout logging
+echo > log.txt
+type: log.txt enter .... save
+git push -u  origin logging
+git checkout master
+git merge logging
+git checkout -b allcommands
+echo > commands.txt
+type: commands.txt enter ... save
+git add --all
+git commit -m "commit"
+git push -u origin allcommands
+git rebase master
+git checkout master
+git merge allcommands
+git pull origin master
+git push origin master
+
+
+
+
